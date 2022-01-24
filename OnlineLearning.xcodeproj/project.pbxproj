@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C310BA0279F04D5000C796D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C310B9F279F04D5000C796D /* UIImage.swift */; };
 		35570D53279EBCA000461808 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35570D52279EBCA000461808 /* Font.swift */; };
 		35BA266E279EB17400D8E1AC /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA265C279EB17400D8E1AC /* Poppins-BlackItalic.ttf */; };
 		35BA266F279EB17400D8E1AC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA265D279EB17400D8E1AC /* Poppins-Thin.ttf */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C310B9F279F04D5000C796D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		35570D52279EBCA000461808 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		35BA265C279EB17400D8E1AC /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		35BA265D279EB17400D8E1AC /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				35E72AD8279E7FDA00A212C0 /* UILabel.swift */,
 				35E72ADD279E8DFC00A212C0 /* UIImageView.swift */,
 				35E72ADF279EA2E800A212C0 /* UIColor.swift */,
+				1C310B9F279F04D5000C796D /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				35E72AD6279E7ECC00A212C0 /* OnboardingChildView.swift in Sources */,
 				35E72AD0279E58B600A212C0 /* OnboardingVC.swift in Sources */,
 				35E72ABB279E574700A212C0 /* AppDelegate.swift in Sources */,
+				1C310BA0279F04D5000C796D /* UIImage.swift in Sources */,
 				35E72ABD279E574700A212C0 /* SceneDelegate.swift in Sources */,
 				35E72AE0279EA2E800A212C0 /* UIColor.swift in Sources */,
 			);
@@ -443,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +474,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
