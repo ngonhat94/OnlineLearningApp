@@ -1,14 +1,26 @@
 //
-//  UIImageView.swift
+//  UITextField.swift
 //  OnlineLearning
 //
-//  Created by vinatti on 24/01/2022.
+//  Created by vinatti on 26/01/2022.
 //
 
 import UIKit
 
-extension UIImageView {
-    func imgConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
+extension UITextField {
+    
+    func borderTextField(_ placeholder: String){
+        self.placeholder = placeholder
+        layer.borderColor = Colors.lbColorThird.cgColor
+        layer.borderWidth = 1.0
+        layer.cornerRadius = 12
+        txtConstraint(size: CGSize(width: 0, height: 50))
+        leftView = UIView(frame: CGRect(x: 0, y: 0, width: 18, height: 50))
+        leftViewMode = .always
+        font = UIFont(name: Font.regular, size: 14)
+    }
+    
+    func txtConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         var anchor = AnchorConstraints()
         self.translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
@@ -35,6 +47,6 @@ extension UIImageView {
         if let centerY = centerY {
             anchor.centerY = centerYAnchor.constraint(equalTo: centerY)
         }
-        [anchor.top, anchor.left, anchor.bottom, anchor.right, anchor.width, anchor.height, anchor.centerX, anchor.centerY].forEach { $0?.isActive = true }
+        [anchor.top, anchor.left, anchor.bottom, anchor.right, anchor.centerX, anchor.centerY, anchor.width, anchor.height].forEach { $0?.isActive = true }
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C310BA0279F04D5000C796D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C310B9F279F04D5000C796D /* UIImage.swift */; };
 		35570D53279EBCA000461808 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35570D52279EBCA000461808 /* Font.swift */; };
+		356FDB6627A0F46E00E530F4 /* FormSignUpSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FDB6527A0F46E00E530F4 /* FormSignUpSignIn.swift */; };
+		356FDB6827A0FED800E530F4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FDB6727A0FED800E530F4 /* UITextField.swift */; };
 		35BA266E279EB17400D8E1AC /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA265C279EB17400D8E1AC /* Poppins-BlackItalic.ttf */; };
 		35BA266F279EB17400D8E1AC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA265D279EB17400D8E1AC /* Poppins-Thin.ttf */; };
 		35BA2670279EB17400D8E1AC /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA265E279EB17400D8E1AC /* Poppins-ExtraLightItalic.ttf */; };
@@ -39,11 +41,19 @@
 		35E72ADC279E890400A212C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ADB279E890400A212C0 /* Colors.swift */; };
 		35E72ADE279E8DFC00A212C0 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ADD279E8DFC00A212C0 /* UIImageView.swift */; };
 		35E72AE0279EA2E800A212C0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ADF279EA2E800A212C0 /* UIColor.swift */; };
+		35FBA27E279F918D00AD1835 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA27D279F918D00AD1835 /* UIView.swift */; };
+		35FBA280279F983600AD1835 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA27F279F983600AD1835 /* UIStackView.swift */; };
+		35FBA283279F9D3C00AD1835 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA282279F9D3C00AD1835 /* SignupVC.swift */; };
+		35FBA286279FAD9600AD1835 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA285279FAD9600AD1835 /* CustomPageControl.swift */; };
+		35FBA288279FE27200AD1835 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA287279FE27200AD1835 /* UIButton.swift */; };
+		35FBA28A279FEBBE00AD1835 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA289279FEBBE00AD1835 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C310B9F279F04D5000C796D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		35570D52279EBCA000461808 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		356FDB6527A0F46E00E530F4 /* FormSignUpSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSignUpSignIn.swift; sourceTree = "<group>"; };
+		356FDB6727A0FED800E530F4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		35BA265C279EB17400D8E1AC /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		35BA265D279EB17400D8E1AC /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		35BA265E279EB17400D8E1AC /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -76,6 +86,12 @@
 		35E72ADB279E890400A212C0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		35E72ADD279E8DFC00A212C0 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		35E72ADF279EA2E800A212C0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		35FBA27D279F918D00AD1835 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		35FBA27F279F983600AD1835 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		35FBA282279F9D3C00AD1835 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		35FBA285279FAD9600AD1835 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
+		35FBA287279FE27200AD1835 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		35FBA289279FEBBE00AD1835 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +142,8 @@
 		35E72ACE279E589D00A212C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				35FBA284279FAD7800AD1835 /* CustomView */,
+				35FBA281279F9D2000AD1835 /* Auth */,
 				35E72AD4279E7EAA00A212C0 /* Onboarding */,
 			);
 			path = ViewControllers;
@@ -155,6 +173,10 @@
 				35E72ADD279E8DFC00A212C0 /* UIImageView.swift */,
 				35E72ADF279EA2E800A212C0 /* UIColor.swift */,
 				1C310B9F279F04D5000C796D /* UIImage.swift */,
+				35FBA27D279F918D00AD1835 /* UIView.swift */,
+				35FBA27F279F983600AD1835 /* UIStackView.swift */,
+				35FBA287279FE27200AD1835 /* UIButton.swift */,
+				356FDB6727A0FED800E530F4 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +221,24 @@
 				35BA266D279EB17400D8E1AC /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		35FBA281279F9D2000AD1835 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				35FBA282279F9D3C00AD1835 /* SignupVC.swift */,
+				35FBA289279FEBBE00AD1835 /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		35FBA284279FAD7800AD1835 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				35FBA285279FAD9600AD1835 /* CustomPageControl.swift */,
+				356FDB6527A0F46E00E530F4 /* FormSignUpSignIn.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,15 +329,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FBA288279FE27200AD1835 /* UIButton.swift in Sources */,
+				35FBA27E279F918D00AD1835 /* UIView.swift in Sources */,
 				35E72ABF279E574700A212C0 /* ViewController.swift in Sources */,
 				35570D53279EBCA000461808 /* Font.swift in Sources */,
 				35E72ADE279E8DFC00A212C0 /* UIImageView.swift in Sources */,
 				35E72ADC279E890400A212C0 /* Colors.swift in Sources */,
+				356FDB6627A0F46E00E530F4 /* FormSignUpSignIn.swift in Sources */,
 				35E72AD3279E598900A212C0 /* OnboardingModel.swift in Sources */,
+				35FBA283279F9D3C00AD1835 /* SignupVC.swift in Sources */,
 				35E72AD9279E7FDA00A212C0 /* UILabel.swift in Sources */,
 				35E72AD6279E7ECC00A212C0 /* OnboardingChildView.swift in Sources */,
+				356FDB6827A0FED800E530F4 /* UITextField.swift in Sources */,
 				35E72AD0279E58B600A212C0 /* OnboardingVC.swift in Sources */,
+				35FBA280279F983600AD1835 /* UIStackView.swift in Sources */,
+				35FBA286279FAD9600AD1835 /* CustomPageControl.swift in Sources */,
 				35E72ABB279E574700A212C0 /* AppDelegate.swift in Sources */,
+				35FBA28A279FEBBE00AD1835 /* LoginVC.swift in Sources */,
 				1C310BA0279F04D5000C796D /* UIImage.swift in Sources */,
 				35E72ABD279E574700A212C0 /* SceneDelegate.swift in Sources */,
 				35E72AE0279EA2E800A212C0 /* UIColor.swift in Sources */,

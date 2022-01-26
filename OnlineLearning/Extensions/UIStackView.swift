@@ -1,14 +1,13 @@
 //
-//  UIImageView.swift
+//  UIStackView.swift
 //  OnlineLearning
 //
-//  Created by vinatti on 24/01/2022.
+//  Created by vinatti on 25/01/2022.
 //
-
 import UIKit
 
-extension UIImageView {
-    func imgConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
+extension UIStackView {
+    func stackConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         var anchor = AnchorConstraints()
         self.translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
@@ -23,18 +22,13 @@ extension UIImageView {
         if let right = right {
             anchor.right = rightAnchor.constraint(equalTo: right, constant: padding.right)
         }
-        if size.width != 0 {
-            anchor.width = widthAnchor.constraint(equalToConstant: size.width)
-        }
-        if size.height != 0 {
-            anchor.height = heightAnchor.constraint(equalToConstant: size.height)
-        }
         if let centerX = centerX {
             anchor.centerX = centerXAnchor.constraint(equalTo: centerX)
         }
         if let centerY = centerY {
             anchor.centerY = centerYAnchor.constraint(equalTo: centerY)
         }
-        [anchor.top, anchor.left, anchor.bottom, anchor.right, anchor.width, anchor.height, anchor.centerX, anchor.centerY].forEach { $0?.isActive = true }
+        [anchor.top, anchor.left, anchor.bottom, anchor.right, anchor.centerX, anchor.centerY].forEach { $0?.isActive = true }
     }
 }
+

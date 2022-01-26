@@ -12,7 +12,6 @@ class OnboardingChildView: UIViewController {
     let image: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFit
-        
         return img
     }()
     let lbTitle: UILabel = {
@@ -24,7 +23,7 @@ class OnboardingChildView: UIViewController {
         return lb
     }()
     let lbDescription: UILabel = {
-        let lb = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 50))
+        let lb = UILabel()
         lb.textColor = Colors.lbColorSecond
         lb.font = UIFont(name: Font.regular, size: 16)
         lb.textAlignment = .center
@@ -32,33 +31,29 @@ class OnboardingChildView: UIViewController {
         return lb
     }()
     let contentStack = UIStackView()
+    let descriptionView: UIView = {
+        let view = UIView()
+        return view
+    }()
     
     var pageIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupContentStack()
+        setupView()
+        setupConstraint()
     }
     
-    func setupContentStack(){
-        view.addSubview(contentStack)
-        contentStack.translatesAutoresizingMaskIntoConstraints = false
+    func setupView(){
         contentStack.addArrangedSubview(image)
         contentStack.addArrangedSubview(lbTitle)
         contentStack.addArrangedSubview(lbDescription)
+        view.addSubview(contentStack)
         contentStack.axis = NSLayoutConstraint.Axis.vertical
-        contentStack.spacing = 20
-        NSLayoutConstraint.activate([
-//            contentStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-//            contentStack.leftAnchor.constraint(equalTo: view.leftAnchor),
-////            contentStack.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-//            contentStack.rightAnchor.constraint(equalTo: view.rightAnchor),
-            contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            lbDescription.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 4),
-            view.trailingAnchor.constraint(equalToSystemSpacingAfter: lbDescription.trailingAnchor, multiplier:4)
-        ])
-        
-//        lbTitle.labelConstraint(top: image.bottomAnchor, left: contentStack.leftAnchor, right: contentStack.rightAnchor, padding: UIEdgeInsets(top: 20, left: 0, bottom: 0, right: -40))
+    }
+    func setupConstraint(){
+        contentStack.stackConstraint(centerX: view.centerXAnchor, centerY: view.centerYAnchor)
+        image.imgConstraint(size: CGSize(width: 260, height: 260))
+        contentStack.spacing = 24
     }
 }

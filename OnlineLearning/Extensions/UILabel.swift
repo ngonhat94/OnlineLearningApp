@@ -8,10 +8,21 @@
 import UIKit
 
 struct AnchorConstraints {
-    var top, left, bottom, right, centerX, centerY: NSLayoutConstraint?
+    var top, left, bottom, right, width, height, centerX, centerY: NSLayoutConstraint?
 }
 
 extension UILabel {
+    
+    func text2Regular14(){
+        textColor = Colors.lbColorSecond
+        font = UIFont(name: Font.regular, size: 14)
+    }
+    
+    func text2Regular12(){
+        textColor = Colors.lbColorSecond
+        font = UIFont(name: Font.regular, size: 12)
+    }
+    
     func labelConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         var anchor = AnchorConstraints()
         self.translatesAutoresizingMaskIntoConstraints = false
