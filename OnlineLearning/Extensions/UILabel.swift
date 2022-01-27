@@ -23,6 +23,21 @@ extension UILabel {
         font = UIFont(name: Font.regular, size: 12)
     }
     
+    func text3Regular12(){
+        textColor = Colors.lbColorThird
+        font = UIFont(name: Font.regular, size: 12)
+    }
+    
+    func text1Semi32(){
+        textColor = Colors.lbColorFirst
+        font = UIFont(name: Font.semibold, size: 32)
+    }
+    
+    func text1Medium18(){
+        textColor = Colors.lbColorFirst
+        font = UIFont(name: Font.medium, size: 18)
+    }
+    
     func labelConstraint(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         var anchor = AnchorConstraints()
         self.translatesAutoresizingMaskIntoConstraints = false

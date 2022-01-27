@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
         let vc = UINavigationController(rootViewController: LoginVC())
-        window?.rootViewController = LoginVC()
+        window?.rootViewController = ContinueWithPhoneVC()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

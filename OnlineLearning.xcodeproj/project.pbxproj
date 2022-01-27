@@ -29,6 +29,8 @@
 		35BA267D279EB17400D8E1AC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA266B279EB17400D8E1AC /* Poppins-Black.ttf */; };
 		35BA267E279EB17400D8E1AC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA266C279EB17400D8E1AC /* Poppins-Regular.ttf */; };
 		35BA267F279EB17400D8E1AC /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35BA266D279EB17400D8E1AC /* Poppins-ThinItalic.ttf */; };
+		35DBCB6A27A2787F0062F9FA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DBCB6927A2787F0062F9FA /* CheckBox.swift */; };
+		35DBCB6C27A2838E0062F9FA /* ContinueWithPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DBCB6B27A2838E0062F9FA /* ContinueWithPhoneVC.swift */; };
 		35E72ABB279E574700A212C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ABA279E574700A212C0 /* AppDelegate.swift */; };
 		35E72ABD279E574700A212C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ABC279E574700A212C0 /* SceneDelegate.swift */; };
 		35E72ABF279E574700A212C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E72ABE279E574700A212C0 /* ViewController.swift */; };
@@ -72,6 +74,8 @@
 		35BA266B279EB17400D8E1AC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		35BA266C279EB17400D8E1AC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		35BA266D279EB17400D8E1AC /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		35DBCB6927A2787F0062F9FA /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		35DBCB6B27A2838E0062F9FA /* ContinueWithPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueWithPhoneVC.swift; sourceTree = "<group>"; };
 		35E72AB7279E574700A212C0 /* OnlineLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E72ABA279E574700A212C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35E72ABC279E574700A212C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 			children = (
 				35FBA282279F9D3C00AD1835 /* SignupVC.swift */,
 				35FBA289279FEBBE00AD1835 /* LoginVC.swift */,
+				35DBCB6B27A2838E0062F9FA /* ContinueWithPhoneVC.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			children = (
 				35FBA285279FAD9600AD1835 /* CustomPageControl.swift */,
 				356FDB6527A0F46E00E530F4 /* FormSignUpSignIn.swift */,
+				35DBCB6927A2787F0062F9FA /* CheckBox.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -346,8 +352,10 @@
 				35FBA286279FAD9600AD1835 /* CustomPageControl.swift in Sources */,
 				35E72ABB279E574700A212C0 /* AppDelegate.swift in Sources */,
 				35FBA28A279FEBBE00AD1835 /* LoginVC.swift in Sources */,
+				35DBCB6A27A2787F0062F9FA /* CheckBox.swift in Sources */,
 				1C310BA0279F04D5000C796D /* UIImage.swift in Sources */,
 				35E72ABD279E574700A212C0 /* SceneDelegate.swift in Sources */,
+				35DBCB6C27A2838E0062F9FA /* ContinueWithPhoneVC.swift in Sources */,
 				35E72AE0279EA2E800A212C0 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

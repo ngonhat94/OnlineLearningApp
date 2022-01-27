@@ -22,6 +22,9 @@ class LoginVC: UIViewController {
     let lbLoginWith = UILabel()
     let lineViewLoginWith = UIView()
     let lineViewLoginWithRight = UIView()
+    let imgLoginGoogle = UIImageView()
+    let imgLoginFacebook = UIImageView()
+    let otherLoginStack = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,9 @@ class LoginVC: UIViewController {
         lbLoginWith.text = "Or login with"
         lineViewLoginWith.backgroundColor = Colors.lbColorSecond
         lineViewLoginWithRight.backgroundColor = Colors.lbColorSecond
+        imgLoginGoogle.image = UIImage(named: "ic_google")
+        imgLoginFacebook.image = UIImage(named: "ic_facebook")
+        otherLoginStack.spacing = 30
         
         view.addSubview(lbTitle)
         view.addSubview(formSignIn)
@@ -55,10 +61,13 @@ class LoginVC: UIViewController {
         view.addSubview(lbLoginWith)
         view.addSubview(lineViewLoginWith)
         view.addSubview(lineViewLoginWithRight)
+        otherLoginStack.addArrangedSubview(imgLoginGoogle)
+        otherLoginStack.addArrangedSubview(imgLoginFacebook)
+        view.addSubview(otherLoginStack)
     }
     
     func setupConstraint(){
-        lbTitle.labelConstraint(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, padding: UIEdgeInsets(top: 30, left: 20, bottom: 0, right: 0))
+        lbTitle.labelConstraint(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, padding: UIEdgeInsets(top: 100, left: 20, bottom: 0, right: 0))
         formSignIn.viewConstraint(top: lbTitle.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, padding: UIEdgeInsets(top: 30, left: 20, bottom: 0, right: -20))
         lbForgetPassword.labelConstraint(top: formSignIn.bottomAnchor, right: view.rightAnchor, padding: UIEdgeInsets(top: 12, left: 0, bottom: 0, right: -20))
         btnLogin.buttonConstraint(top: lbForgetPassword.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, padding: UIEdgeInsets(top: 20, left: 20, bottom: 0, right: -20))
@@ -66,6 +75,8 @@ class LoginVC: UIViewController {
         lbLoginWith.labelConstraint(top: lbNoAccountAndSignup.bottomAnchor, padding: UIEdgeInsets(top: 22, left: 0, bottom: 0, right: 0), centerX: view.centerXAnchor)
         lineViewLoginWith.viewConstraint(left: view.leftAnchor, right: lbLoginWith.leftAnchor, padding: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: -20), size: CGSize(width: 0, height: 0.5), centerY: lbLoginWith.centerYAnchor)
         lineViewLoginWithRight.viewConstraint(left: lbLoginWith.rightAnchor, right: view.rightAnchor, padding: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: -20), size: CGSize(width: 0, height: 0.5), centerY: lbLoginWith.centerYAnchor)
+        otherLoginStack.stackConstraint(top: lbLoginWith.bottomAnchor, padding: UIEdgeInsets(top: 30, left: 0, bottom: 0, right: 0), centerX: view.centerXAnchor
+        )
     }
 }
 
